@@ -1,5 +1,6 @@
 import Reveal from "./components/Reveal";
 import CountUp from "./components/CountUp";
+import DashboardPreview from "./components/DashboardPreview";
 
 /* ---------------------------------------------------------------- nav --- */
 function Nav() {
@@ -172,6 +173,26 @@ function GreenTune() {
             <em> measurement</em> into energy <em>optimization</em>, with a governance layer built for
             EU AI Act and SEC climate disclosure.
           </p>
+        </Reveal>
+
+        {/* product preview */}
+        <Reveal delay={80}>
+          <div className="mt-10">
+            <div className="mb-3 flex items-center justify-between flex-wrap gap-2">
+              <span className="text-sm font-medium text-emerald-200/80">The product — live training dashboard</span>
+              <a
+                href="https://www.nemulai.com/admin/fine-tuning"
+                className="text-xs text-white/40 hover:text-emerald-300 transition-colors font-mono"
+              >
+                nemulai.com/admin/fine-tuning →
+              </a>
+            </div>
+            <DashboardPreview />
+            <p className="mt-3 text-xs text-white/35">
+              Real metrics from a baseline Qwen2.5-7B QLoRA run on AMD MI300X. The live dashboard streams power,
+              loss, and per-token energy over SSE while training runs.
+            </p>
+          </div>
         </Reveal>
 
         {/* key finding */}
