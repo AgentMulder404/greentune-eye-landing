@@ -1,6 +1,7 @@
 import Reveal from "./components/Reveal";
 import CountUp from "./components/CountUp";
 import DashboardPreview from "./components/DashboardPreview";
+import EyePreview from "./components/EyePreview";
 
 /* ---------------------------------------------------------------- nav --- */
 function Nav() {
@@ -316,6 +317,28 @@ function Eye() {
             analyzes market sentiment, scores provider reliability, and generates ranked
             cost-optimization recommendations — all powered by Bright Data and Claude.
           </p>
+        </Reveal>
+
+        {/* product preview */}
+        <Reveal delay={80}>
+          <div className="mt-10">
+            <div className="mb-3 flex items-center justify-between flex-wrap gap-2">
+              <span className="text-sm font-medium text-amber-200/80">The product — live pricing oracle</span>
+              <a
+                href="https://www.nemulai.com/eye"
+                className="text-xs text-white/40 hover:text-amber-300 transition-colors font-mono"
+              >
+                nemulai.com/eye →
+              </a>
+            </div>
+            <EyePreview />
+            <p className="mt-3 text-xs text-white/35">
+              Live H100 SXM rates across 6 providers (baseline × real provider multipliers), with arbitrage,
+              composite reliability scores, and the Bright Data MCP trace. Try the public savings calculator at
+              {" "}
+              <a href="https://www.nemulai.com/eye/demo" className="text-amber-300/70 hover:text-amber-300">nemulai.com/eye/demo</a>.
+            </p>
+          </div>
         </Reveal>
 
         {/* bright data products */}
